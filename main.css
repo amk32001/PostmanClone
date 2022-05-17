@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  margin: 1px;
+  padding: 0;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+.hdd{
+ align-items: center;
+ margin: 50px;
+}
+body {
+  background-color: #fffef2;
+  font-family: "Poppins", sans-serif;
+  
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.mainh{
+    display: flex;
+}
+.varr
+{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+.grid {
+  display: grid;
+  width: 150em;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  height: 400px;
+}
+
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.hdddd
+.btn{
+    padding-top: 2px;
+}
+.card-img {
+  display: inline-block;
+  margin-top: 4px;
+  width: 50%;
+  height: 80px;
+  
+  clip-path: circle();
+
+}
+
+.card-content {
+  padding: 2rem;
+
+}
+
+.card-header {
+  font-size: 3rem;
+  font-weight: 200;
+  color: #0d0d0d;
+  margin-bottom: 2px;
+
+}
+
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+  height: 130px;
+  overflow: hidden;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #3363ff;
+  background-color: #d8e0fd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  margin-top: 3px;
+  
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+
+  .grid {
+    grid-gap: 3rem;
+  }
+}
