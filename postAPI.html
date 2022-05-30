@@ -1,69 +1,61 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
     <link rel="stylesheet" href="postAPI.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+</head>
+
 <body>
-  <div class="container">
-    <div class="title">Fill details for posting API</div>
-    <div class="content">
-      <form action="#">
-        <div class="user-details">
-          <div class="input-box">
-            <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
-          </div>
-          <!-- <div class="input-box">
-            <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
-          </div> -->
-          <div class="input-box">
-            <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
-          </div>
-          <div class="input-box">
-            <span class="details">API url</span>
-            <input type="text" placeholder="Enter your API url" required>
-          </div>
-          <div class="input-box">
-            <span class="details">API Description(3-4 lines)</span>
-            <textarea rows="3" cols="30" name="address" id="address"></textarea>
-          </div>
-        </div>
-        <!-- <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">Male</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Female</span>
-          </label>
-          <label for="dot-3">
-            <span class="dot three"></span>
-            <span class="gender">Prefer not to say</span>
-            </label>
-          </div>
-        </div> -->
-        <div class="button">
-          <input type="submit" value="Register">
-        </div>
-      </form>
+    <div class="container">
+        
+        <form action="" id="contactForm">
+            
+            <div class="alert">Your message sent</div>
+            
+            <div  class="input-box">
+                <input type="text" id="name" placeholder="Full Name" />
+            </div>
+
+             <div  class="input-box">
+                <input type="email" id="emailid" placeholder="Email" />
+            </div>
+
+            <div  class="input-box">
+                <input type="url" id="url" placeholder="API URL" />
+            </div>
+
+            <div  class="input-box">
+                <textarea id="msgContent" cols="30" rows="10" placeholder="Description "></textarea>
+            </div>
+            <div>
+            <input type="file" id="file">
+    <progress id="progress_bar" value="0" max="100"></progress>
+    
+    
+            </div>
+            <div  class="input-box">
+                <button type="submit">Submit</button>
+            </div>
+        
+        
+        </form>
+    
     </div>
-  </div>
+</form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="firebase.js" type="text/javascript"></script>
+
 
 </body>
+
 </html>
